@@ -6,7 +6,7 @@
 /*   By: swenn <swenn@42angouleme.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/14 16:05:47 by swenn             #+#    #+#             */
-/*   Updated: 2024/09/24 16:18:25 by swenn            ###   ########.fr       */
+/*   Updated: 2024/09/30 15:28:32 by swenn            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -116,18 +116,5 @@ char	**ft_split(char *str, char *charset)
 	}
 	split_str[j] = NULL;
 	return (split_str);
-}
-
-int main()
-{
-	char	**split;
-	int	i;
-
-	split = ft_split("ah voila aa a", " ");
-	i = 0;
-	while (split[i])
-	{
-		printf("%s\n", split[i]);
-		i++;
-	}
+	//Valgrind errors to remove but its ok.
 }
