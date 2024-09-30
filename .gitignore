@@ -1,2 +1,4 @@
-list_sort/.cache/
-list_sort/compile_commands.json
+*.swp
+*.out
+.cache/
+compile_commands.json
